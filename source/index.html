@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -65,7 +69,7 @@
         </li>
       </ul>
     </nav>
-    <button class="page-header__toggle button button--opened" type="button">
+    <button class="page-header__toggle button--opened" type="button">
       <span class="visually-hidden">Переключить отображение меню.</span>
     </button>
   </header>
@@ -98,7 +102,7 @@
                 height="280">
             </picture>
             <div class="slider-card__block">
-              <p class="badge badge--slider">Новинка!</p>
+              <p class="badge badge--left">Новинка!</p>
               <h2 class="slider-card__title">Декаф Флэт Уайт</h2>
               <p class="slider-card__description">
                 Свежесваренный кофе без кофеина из Эфиопии&nbsp;<br />
@@ -131,7 +135,7 @@
                 height="280">
             </picture>
             <div class="card__block">
-              <span class="card__badge">Новинка!</span>
+              <p class="badge badge--left">Новинка!</p>
               <h2 class="card__title">Лавандовый Латте</h2>
               <p class="card__description">
                 Невероятное сочетание перуанской высокогорной арабики с
@@ -164,7 +168,7 @@
                 height="280">
             </picture>
             <div class="card__block">
-              <span class="card__badge">Новинка!</span>
+              <p class="badge badge--left">Новинка!</p>
               <h2 class="card__title">Тройной Эспрессо</h2>
               <p class="card__description">
                 Мощнее укола адреналина, чернее самой тёмной ночи, этот
@@ -193,29 +197,29 @@
 
     <section class="advantages">
       <p class="badge">Преимущества</p>
-      <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+      <h2 class="advantages__title title">Главные причины выбрать Drink2Go</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--speed">
-          <h3 class="advantages_subtitle">Скорость</h3>
+          <h3 class="advantages_subtitle subtitle">Скорость</h3>
           <p class="advantages-description">
             Готовый напиток всегда под рукой — просто открой банку
           </p>
         </li>
         <li class="advantages__item advantages__item--fit">
-          <h3 class="advantages_subtitle">Удобство</h3>
+          <h3 class="advantages_subtitle subtitle">Удобство</h3>
           <p class="advantages-description">
             Легко помещается и в карман,<br />
             и в маленькую сумочку
           </p>
         </li>
         <li class="advantages__item advantages__item--energy">
-          <h3 class="advantages_subtitle">Бодрость</h3>
+          <h3 class="advantages_subtitle subtitle">Бодрость</h3>
           <p class="advantages-description">
             Сбалансированная доза кофеина даст мощный заряд энергии
           </p>
         </li>
         <li class="advantages__item advantages__item--eco">
-          <h3 class="advantages_subtitle">Экологичность</h3>
+          <h3 class="advantages_subtitle subtitle">Экологичность</h3>
           <p class="advantages-description">
             Вся упаковка сделана<br />
             из перерабатываемых материалов
@@ -228,7 +232,7 @@
 
     <section class="catalog">
       <p class="badge">Каталог</p>
-      <h2 class="catalog__title">Каталог кофейных напитков</h2>
+      <h2 class="catalog__title title">Каталог кофейных напитков</h2>
 
       <!-- Форма  -->
 
@@ -332,9 +336,7 @@
           </ul>
         </fieldset>
         <div class="form__button-filter">
-          <button class="button button--submit" type="submit">
-            Применить
-          </button>
+          <button class="button button--submit" type="submit">Применить</button>
           <button class="button button--reset" type="reset">Сбросить</button>
         </div>
       </form>
@@ -364,14 +366,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>
@@ -387,14 +389,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>
@@ -410,14 +412,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>
@@ -433,14 +435,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>
@@ -456,14 +458,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>
@@ -479,14 +481,14 @@
                 alt="Фото банки с бодрящим кофе" width="130" height="188" />
             </picture>
           </a>
-          <h3 class="card-list__title">Декаф Флэт Уайт</h3>
+          <h3 class="card-list__title subtitle">Декаф Флэт Уайт</h3>
           <p class="card-list__description">
             Кофе без кофеина из Эфиопии<br />
             с натуральным фермерским молоком
           </p>
           <div class="card-list__bay">
             <b class="card-list__price">225₽</b>
-            <button class="card-list__button button button--icon" type="button">
+            <button class="card-list__button button button--add" type="button">
               В корзину
             </button>
           </div>

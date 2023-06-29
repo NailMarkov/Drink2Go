@@ -1,0 +1,97 @@
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.badge {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  color: $base-primary;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--left {
+    @media(min-width: $desktop) {
+      text-align: left;
+    }
+  }
+}
+
+.button {
+  padding: 8px 20px;
+  background-color: $base-primary;
+  color: $base-white;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+
+  &--reset {
+    background-color: $base-white;
+    color: $base-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $base-white;
+    }
+
+    &:disabled {
+      background-color: $light-grey;
+      color: $base-white;
+    }
+  }
+
+  &--add {
+    position: relative;
+    padding-left: 46px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      width: 20px;
+      height: 16px;
+      background-image: url("#{$bg-path-icon}#cart-add");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+
+  @media(min-width: $tablet) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  @media(min-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
